@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC"-//w3c//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtm">
+<head>
+	<title>palindrome.html</title>
+</head>
+<body style="background-color: white; color: red;">
+	<script type="text/javascript">
+
+		var bordersize = prompt("Select a table border size \n"+
+								"0 (no border)\n"+
+								"1 (1 pixel border)\n"+
+								"4 (4 pixel border)\n"+
+								"8 (8 pixel border)\n");
+
+		switch(bordersize){
+			case "0":document.write("<table>");
+					 break;
+			case "1":document.write("<table border='1'>");
+					 break;
+			case "4":document.write("<table border='4'>");
+					 break;
+			case "8":document.write("<table border='8'>");
+					 break;
+			default:document.write("Error - Invalid choice: ",bordersize,"<br>");
+					 break;
+		}
+
+		document.write("<caption>marks details of all the students</caption>");
+		document.write("<tr>",
+					   
+					   "<th>sno</th>",
+					   "<th>sname</th>",
+						"<th>m1</th>",
+"<th>m2</th>",
+"<th>m3</th>",
+"<th>total</th>",
+"<th>avg</th>",
+"<th>grade</th>",
+					   "</tr>",
+					   "<tr>",
+					   "<th>101</th>",
+					   "<th>rashmi</th>",
+					   "<th>68</th>",
+"<th>56</th>",
+"<th>36</th>",
+"<th>160</th>",
+"<th>53.3</th>",
+"<th>C</th>",
+					   "</tr>",
+					   "<tr>",
+					   "<th>102</th>",
+					   "<th>vishwa</th>",
+					   "<th>80</th>",
+"<th>90</th>",
+"<th>90</th>",
+"<th>260</th>",
+"<th>86.66</th>",
+"<th>A</th>",
+					   "</tr>",
+					   
+					   "</table>");
+
+	</script>
+</body>
